@@ -1,0 +1,52 @@
+.v_banner {
+	height: 13.8rem;
+	width:100%;
+}
+ .v_banner .swiper-container,  .v_banner .swiper-container .swiper-wrapper, .v_banner .swiper-container .swiper-wrapper .swiper-slide ,.v_banner img{
+ 	height: 100%;
+ 	width:100%;
+ }
+ .v_banner  .swiper-container .swiper-pagination{
+	display: none !important;
+}
+.v_banner .swiper-container .swiper-wrapper .overTitile{
+	height: 3.8rem;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom:0rem;
+	z-index: 999;
+	font-size: 2rem;
+	color:#fff;
+	line-height: 3.8rem;
+	white-space: nowrap;
+	text-overflow: inherit;
+	overflow: hidden;
+	text-indent:2rem;
+	animation: v_show 2s infinite;
+}
+@keyframes v_show{
+	0%{transform: translateY(0%);}
+	20%{transform: translateY(100%);}
+	80%{transform: translateY(100%);}
+	100%{transform: translateY(0%);}
+}
+.v-listTab{
+	height: 3rem;
+	width:100%;
+	background: #f1f3f5;
+	border-bottom:1px solid #e2e6e9;
+}
+.v-listTab li{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.v-listTab li a{
+	display: block;
+	height: 100%;
+	width:100%;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	text-align: center;
+}
