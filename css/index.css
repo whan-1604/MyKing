@@ -42,13 +42,14 @@
 #tab{
 	height: 6.27%;
 	width:100%;
-	background: #1c1f32;
+	/*background: #1c1f32;*/
 	position: fixed;
 	bottom: 0;
 }
 #tab ul{
 	height: 100%;
 	width:100%;
+	background-size:cover ;
 }
 #tab ul li{
 	width:25%;
@@ -59,7 +60,25 @@
 	display: block;
 	height: 100%;
 	width:100%;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: center;
 	color: white;
+	padding-top:2.4rem;
+	color: #b6b8be;
+}
+#tab ul li:nth-child(1) a{
+	background: url(../img/snavnew11.png)no-repeat left #d7b87f;
+	background-size: 400% 100%;
+}
+#tab ul li:nth-child(2) a{
+	background: url(../img/snavnew11.png)no-repeat  33.5% #2d3140;
+	background-size: 400% 100%;
+}
+#tab ul li:nth-child(3) a{
+	background: url(../img/snavnew11.png)no-repeat  67% #2d3140;
+	background-size: 400% 100%;
+}
+#tab ul li:nth-child(4) a{
+	background: url(../img/snavnew11.png)no-repeat  100% #2d3140;
+	background-size: 400% 100%;
 }

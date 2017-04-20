@@ -8,6 +8,20 @@ angular.module('videosModule',[])
             css:'components/videos/videos.css'
         })
 })
-.controller('videosCtrl',['$scope',function($scope){
-	$scope.name = '熊3';
+.service('swiper',['$timeout',function($timeout){
+	$timeout(function(){
+		new Swiper ('.swiper-container', {
+		    loop: true,
+		    autoplay:2000,
+		    // 如果需要分页器
+		    autoplayDisableOnInteraction:false,
+		    pagination: '.swiper-pagination'
+		  }) 
+	},10);
+}])
+.controller('videosCtrl',['$scope','$http','swiper',function($scope,$http){
+	$http.get('components/videos/json/bannner.json').success(function(res){
+		$scope.data=res.msg.reclist_236;
+		console.log($scope.data);
+	})
 }])

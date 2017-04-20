@@ -1,1 +1,20 @@
+<div class="v_banner">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" ng-repeat="item in data">
+				<img src="{{item.sIMG}}"/>
+				<div class="overTitile">{{item.sDesc}}</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+<ul class="v-listTab">
+	<li><a href="" ui-sref='.games'>赛事</a></li>
+	<li><a href="" ui-sref='.hreo'>英雄</a></li>
+	<li><a href="" ui-sref='.introduce'>解说</a></li>
+	<li><a href="" ui-sref='.happy'>娱乐</a></li>
+	<li><a href="" ui-sref='.official'>官方</a></li>
+</ul>
+<div class="v-listShow" ui-view></div>
 
