@@ -10,4 +10,5 @@ angular.module('homeModule',[])
 })
 .controller('homeCtrl',['$scope',function($scope){
 	$scope.name = '熊1';
+	$scope.show='我是首页'
 }])
