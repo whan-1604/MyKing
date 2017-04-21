@@ -11,7 +11,7 @@ angular.module('gamesModule',[])
 .controller('gamesCtrl',['$scope','$http',function($scope,$http){
 	
 	$http.get('components/videos/json/games.json').success(function(res){
-		$scope.gamesData=res.result;
-		console.log(res.result);
+		$scope.gamesData=res.msg.result;
+		console.log(res.msg.result);
 	})
 }])
