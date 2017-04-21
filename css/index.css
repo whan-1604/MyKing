@@ -10,6 +10,7 @@
 	position: fixed;
 	top: 0;	
 	padding-left:4.7rem;
+	z-index: 9999;
 }
 #header h3{
 	color:#fff;
@@ -32,17 +33,16 @@
 	color:#636980;
 }
 #main{
-	height: 93.73%;
+	height: 100%;
 	width:100%;
 	background: white;
-	padding-top: 10.69%;
-	/*position: absolute;
-	bottom: 6.27%;*/
+	top: 0;
+	position: absolute;
+	padding-top: 6.27%;
 }
 #tab{
 	height: 6.27%;
 	width:100%;
-	/*background: #1c1f32;*/
 	position: fixed;
 	bottom: 0;
 }
