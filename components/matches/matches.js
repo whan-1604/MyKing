@@ -43,12 +43,12 @@ angular.module('matchesModule',[])
 	
 	$http.get('components/matches/json/2.json').success(function(res){
 		$scope.events08=res.msg['reclist_265'];
-		console.log($scope.events08);
+//		console.log($scope.events08);
 	})
 	
 	$http.get('components/matches/json/2.json').success(function(res){
 		$scope.events09=res.msg['reclist_267'];
-		console.log($scope.events09);
+//		console.log($scope.events09);
 	})
 	
 	$scope.isActive=false;

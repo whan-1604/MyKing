@@ -13,7 +13,7 @@
 		<li ng-repeat="item in events01">
 			<a href="{{item.sUrl}}">{{item.sTitle}}</a><p>4/20</p>
 		</li>
-		<li><button ng-click="changeShow()">点击加载更多</button></li>
+		
 	</ul>	
 	<ul ng-class="{true:'active',false:'inactive'}[isActive]" id="mEvent01">
 		<li ng-repeat="item in events02">
@@ -41,6 +41,8 @@
 			<a href="{{item.sUrl}}">{{item.sTitle}}</a><p>4/20</p>
 		</li>
 	</ul>
+	
+	<div><button ng-click="changeShow()">点击加载更多&nbsp;/&nbsp;收起</button></div>
 	<div class="mSpace"></div>
 	<div class="mSpace"></div>
 	<div class="mSpace"></div>

@@ -1,17 +1,18 @@
 #mBox{background:#efefef;}
 
-
 #mEvent,#mEvent01{width:96.77%;}
 #mEvent li,#mEvent01 li{width:100%;height:2.4rem;}
 #mEvent li a,#mEvent01 li a{display:block;width:84.66%;height:2.4rem;float:left;line-height:2.4rem;}
 #mEvent li p,#mEvent01 li p{width:9.33%;height:2.4rem;float:right;color:#ababab;}
-#mEvent li button,#mEvent01 li button{outline:none;height:2.2rem;width:100%;border:1px solid #e4e4e4;border-radius:5px;background:#e4e4e4;line-height:2.2rem;text-align:center;color:#a2a2a2;font-size:1.2rem;font-weight:normal;}
+#mEvent li button,#mEvent01 li button{outline:none;height:2.2rem;width:100%;border:1px solid #e4e4e4;border-radius:5px;background:#e4e4e4;/*line-height:2.2rem;*/text-align:center;color:#a2a2a2;font-size:1.2rem;font-weight:normal;}
+div button{outline:none;height:2.2rem;width:100%;border:1px solid #e4e4e4;border-radius:5px;background:#e4e4e4;line-height:2.2rem;text-align:center;color:#a2a2a2;font-size:1.2rem;font-weight:normal;}
+
 
 .mSpace{width:100%;height:1rem;}
 .mH{font-size:1.4rem;color:#05b1ff;line-height:2.2rem;}
-.mH button{width:5rem;height:16px;text-align:center;color:#a2a2a2;font-size:1rem;border:1px solid #a2a2a2;background:#fff;border-radius:10px;}
+.mH button{width:5rem;height:1.6rem;line-height:1.6rem;text-align:center;color:#a2a2a2;font-size:1rem;border:1px solid #a2a2a2;background:#fff;border-radius:10px;}
 .mTime{color:#4f5457;line-height:1.4rem;}
-.mDoing{margin:1rem 0.2rem;width:4.6rem;height:1.6rem;background:#00aff5;border:1px solid #00aff5;border-radius:10px;color:#fff;}
+.mDoing{margin:1rem 0.2rem;width:4.6rem;height:1.6rem;line-height:1.6rem;background:#00aff5;border:1px solid #00aff5;border-radius:10px;color:#fff;}
 
 .mVideo{width:100%;height:17.2rem;position:relative;}
 .mVideo img{width:100%;height:17.2rem;}
@@ -21,5 +22,5 @@
 .inactive{display:none;}
 .showButton{display:block;}
 
-.mStart{width:5.6rem;height:3.6rem;background:rgba(0,0,0,0.5);position:absolute;left:40%;top:18rem;}
+.mStart{width:5.6rem;height:3.6rem;background:rgba(0,0,0,0.5);position:absolute;left:40%;top:15rem;}
 .mStart img{width:1.5rem;height:1.7rem;display:block;margin:1.1rem 1.9rem 0.9rem 2.2rem;}

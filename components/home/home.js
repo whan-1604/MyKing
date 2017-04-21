@@ -12,7 +12,7 @@ angular.module('homeModule',[])
 
 .service('swiper',['$timeout',function($timeout){
 	$timeout(function(){
-		new Swiper ('.swiper-container', {
+		var mySwiper = new Swiper ('.swiper-container', {
 		    loop: true,
 		    autoplay:2000,
 		    // 如果需要分页器
