@@ -3,7 +3,7 @@
 
 #mEvent,#mEvent01{width:96.77%;}
 #mEvent li,#mEvent01 li{width:100%;height:2.4rem;}
-#mEvent li div,#mEvent01 li div{width:84.66%;height:2.4rem;float:left;line-height:2.4rem;}
+#mEvent li a,#mEvent01 li a{display:block;width:84.66%;height:2.4rem;float:left;line-height:2.4rem;}
 #mEvent li p,#mEvent01 li p{width:9.33%;height:2.4rem;float:right;color:#ababab;}
 #mEvent li button,#mEvent01 li button{outline:none;height:2.2rem;width:100%;border:1px solid #e4e4e4;border-radius:5px;background:#e4e4e4;line-height:2.2rem;text-align:center;color:#a2a2a2;font-size:1.2rem;font-weight:normal;}
 
@@ -23,6 +23,3 @@
 
 .mStart{width:5.6rem;height:3.6rem;background:rgba(0,0,0,0.5);position:absolute;left:40%;top:18rem;}
 .mStart img{width:1.5rem;height:1.7rem;display:block;margin:1.1rem 1.9rem 0.9rem 2.2rem;}
-
-
-
