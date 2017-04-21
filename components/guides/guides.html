@@ -1,1 +1,22 @@
-<p>{{name}}</p>
+<div  class="g-search">
+	<input type="search" placeholder="请输入你想要搜索的英雄名" />
+</div>
+<div class="g_banner">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" ng-repeat="item in data">
+				<img src="{{item.sIMG}}"/>
+				<div class="overTitile">{{item.sDesc}}</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+<ul class="g-listTab">
+	<li><a href="" ui-sref='.recent'>最新</a></li>
+	<li><a href="" ui-sref='.newhand'>新手</a></li>
+	<li><a href="" ui-sref='.heros'>英雄</a></li>
+	<li><a href="" ui-sref='.officialNews'>官方</a></li>
+	<li><a href="" ui-sref='.colleagues'>同人</a></li>
+</ul>
+<div class="g-listShow" ui-view></div>
