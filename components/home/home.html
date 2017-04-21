@@ -22,7 +22,8 @@
     </div>
     <!-- 如果需要分页器 -->
     <div class="swiper-pagination"></div>
-</div>
+	</div>
+</div>	
 
 <div id="hmenu">
 	<ul>
@@ -44,4 +45,55 @@
 		<li><p>赛事 | KPL第五周前瞻：常规赛即将过半，从排名大战进入保级大战</p><b>04/20</b></li>
 		<li><p>新闻 | 《王者荣耀》实名制注册引导</p><b>04/17</b></li>
 	</ul>
+</div>
+
+<div id="hVideo">
+	<h6><p>精彩视频</p>      <span>more</span></h6>
+	<ul>
+		<li ng-repeat="item in videos">
+			<img src="components/home/video_icon.png" alt="" class="hStart"/>
+			<dl >
+				<dt><a href="{{item.sUrl}}"><img src="{{item.sIMG}}" alt="" /></a></dt>
+				<dd>{{item.sTitle}}</dd>
+				<dd><span>{{item.iTotalPlay}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>4-20</b></dd>
+			</dl>
+		</li>
+	</ul>
+</div>
+
+<div id="hStrategy">
+	<h6><p>精品攻略</p>      <span>more</span></h6>
+	
+	<ul>
+		<li ng-repeat="item in picLists">
+			<dl>
+				<dt><img src="{{item.sIMG}}" alt="" /></dt>
+				<dd class="hContent">
+					<p>{{item.sTitle}}</p>
+					<div>{{item.sDesc}}</div>
+				</dd>
+				<dd class="hTime">
+					<span>{{item.iTotalPlay}}</span>
+					<b>4-21</b>
+				</dd>
+			</dl>
+		</li>
+		<li ng-repeat="item in picLists01">
+			<dl>
+				<dt><img src="{{item.sIMG}}" alt="" /></dt>
+				<dd class="hContent">
+					<p>{{item.sTitle}}</p>
+					<div>{{item.sDesc}}</div>
+				</dd>
+				<dd class="hTime">
+					<span>{{item.iTotalPlay}}</span>
+					<b>4-21</b>
+				</dd>
+			</dl>
+		</li>
+	</ul>
+</div>
+
+<div class="space">
+	
 </div>
