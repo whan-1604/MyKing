@@ -22,7 +22,7 @@ angular.module('homeModule',[])
 }])
 
 
-.controller('homeCtrl',['$scope','swiper','$http',function($scope,$http){
+.controller('homeCtrl',['$scope','$http','swiper',function($scope,$http){
 	$http.get('components/home/json/view.json').success(function(res){
 		$scope.data=res.msg;
 		console.log($scope.data);
