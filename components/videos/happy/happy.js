@@ -11,7 +11,7 @@ angular.module('happyModule',[])
 .controller('happyCtrl',['$scope','$http',function($scope,$http){
 	
 	$http.get('components/videos/json/happy.json').success(function(res){
-		$scope.gamesData=res.msg.result;
+		$scope.happyData=res.msg.result;
 		console.log(res.msg.result);
 	})
 }])

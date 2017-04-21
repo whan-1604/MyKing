@@ -1,5 +1,6 @@
-angular.module('videosModule',[])
+angular.module('videosModule',['gamesModule','heroModule','introduceModule','happyModule','officialModule'])
 .config(function($stateProvider, $urlRouterProvider){
+	$urlRouterProvider.otherwise('/videos/games');
     $stateProvider
         .state('videos',{
             url: '/videos',

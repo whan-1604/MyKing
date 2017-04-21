@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<div class="v-i-videos" ng-repeat='item in introduceData'>
+	<a href="{{item.sUrl}}">
+		<img src="{{item.sIMG}}"/>
+		<span></span><span>{{item.sTitle}}</span>
+		<p><span>{{item.iTotalPlay}}</span><span>{{item.sIdxTime}}</span></p>
+	</a>
+</div>
