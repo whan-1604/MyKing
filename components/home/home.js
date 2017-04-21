@@ -22,9 +22,21 @@ angular.module('homeModule',[])
 }])
 
 
-.controller('homeCtrl',['$scope','$http','swiper',function($scope,$http){
+.controller('homeCtrl',['$scope','$http','$sce','swiper',function($scope,$http,$sce){
 	$http.get('components/home/json/view.json').success(function(res){
-		$scope.data=res.msg;
-		console.log($scope.data);
+		$scope.videos=res.msg.reclist_230;
+		$scope.videoUrl = function(url){  
+       return $sce.trustAsResourceUrl(url);  
+  }  
 	})
+	
+	$http.get('components/home/json/strategy01.json').success(function(res){
+		$scope.picLists=res.msg.result;
+	})
+	
+	$http.get('components/home/json/strategy02.json').success(function(res){
+		$scope.picLists01=res.msg.result;
+		console.log($scope.picLists01);
+	})
+	
 }])

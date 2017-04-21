@@ -26,3 +26,36 @@
 #hInformation li p{float:left;width:86.7%;height:3rem;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 #hInformation li b{color:#6f6f6f;width:13.3%;height:3rem;float:right;display:block;}
 #hInformation h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
+
+
+#hVideo{width:90.91%;margin:0 auto;}
+#hVideo h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
+#hVideo h6 p{height:4rem;line-height: 4rem;float:left;width:86.7%;}
+#hVideo li{width:50%;float:left;position:relative;}
+#hVideo li dl{width:100%;margin:0 auto;height:11.6rem;}
+#hVideo li dt{width:100%;height:8rem;}
+#hVideo li dt img{height:8rem;}
+
+.hStart{position:absolute;bottom:6rem;left:30%;}
+
+#hVideo li dl dd{text-overflow: ellipsis;overflow: hidden;white-space:nowrap;font-size:1.4rem;}
+
+#hStrategy{width:90.91%;margin:0 auto;}
+#hStrategy h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
+#hStrategy h6 p{height:4rem;line-height: 4rem;float:left;width:86.7%;}
+
+#hStrategy ul li{width:100%;height:4.5rem;overflow: hidden;margin-bottom:1.2rem;}
+#hStrategy li dl{width:100%;height:100%;}
+#hStrategy li dl dt{width:18.57%;height:100%;float:left;}
+#hStrategy li dl dt img{height:100%;}
+#hStrategy li dl .hContent{width:67.86%;height:100%;float:left;}
+#hStrategy li dl .hTime{width:13.57%;height:100%;float:left;color:#b9b9b9;}
+#hStrategy li dl .hContent p{color:#3e3e3e;font-size:1.6rem;line-height:1.8rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#hStrategy li dl .hContent div{color:#a7acb0;font-size:1.2rem;line-height:1.4rem;text-overflow: ellipsis;white-space: pre-wrap;}
+#hStrategy li dl .hTime span{display:block;margin-bottom:2rem;}
+#hStrategy li dl .hTime b{display:block;font-weight: normal;}
+
+
+
+
+
