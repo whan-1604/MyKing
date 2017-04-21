@@ -1,1 +1,72 @@
-<p>{{name}}</p>
+<div id="mBox">
+	<div class="mSpace"></div>
+	<h6 class="mH">KPL 王者职业联赛 &nbsp;&nbsp;<button>官方举办</button></h6>
+	<p class="mTime">2017-03-24至2017-07-08</p>
+	<button class="mDoing">进行中</button>
+	<a href="javascript:void(0)" class="mVideo"><img src='components/matches/matches.jpg'/></a>
+	<div class="mStart"><img src="components/matches/matches.png" alt="" /></div>
+	<h6 class="mEvents">赛事资讯</h6>
+	<ul id="mEvent">
+		<li ng-repeat="item in events">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events01">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li><button ng-click="changeShow()">点击加载更多</button></li>
+	</ul>	
+	<ul ng-class="{true:'active',false:'inactive'}[isActive]" id="mEvent01">
+		<li ng-repeat="item in events02">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events03">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events04">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events05">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events06">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events07">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events08">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+		<li ng-repeat="item in events09">
+			<div>{{item.sTitle}}</div><p>4/20</p>
+		</li>
+	</ul>
+	<div class="mSpace"></div>
+	<div class="mSpace"></div>
+	<div class="mSpace"></div>
+	<div class="mSpace"></div>
+	<div class="mSpace"></div>
+	<div class="mSpace"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
