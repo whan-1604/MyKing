@@ -19,7 +19,10 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	/*$http.get('components/guides/json/colleagues.json').success(function(res){
 	$scope.data=res.msg.result;
 	})*/
-	$scope.name='哈哈哈哈哈哈哈哈哈哈哈哈';
+	$scope.change=false;
+	$scope.changeClass=function(){
+		$scope.change=!$scope.change;
+	}
 }])
 .controller('heroIntrCtrl',['$scope','$http',function($scope,$http){
 	/*$http.get('components/guides/json/colleagues.json').success(function(res){

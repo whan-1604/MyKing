@@ -1,0 +1,39 @@
+.forNew-list{
+	height: 5.2%;
+	width:100%;
+	border-bottom: 1px solid #eaeaea;
+}
+.forNew-list li{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right:1px solid #eaeaea;
+}
+.forNew-list li:nth-last-child{
+	border: none;
+}
+.forNew-list li:nth-child(1){
+	width:10%;
+}
+.forNew-list li:nth-child(1) a{
+	background: url(../../img/sign.png)no-repeat;
+	background-size: 100% 100%;
+}
+.forNew-list li a{
+	display: block;
+	height: 100%;
+	width:100%;
+	line-height: 300%;
+	/*background: url(../../img/go_icon_02.png)no-repeat;
+	background-size:100% 100% ;*/
+	text-align: center;
+}
+.chosen-yes{
+	color: #fff;
+	background: url(../../img/go_icon_02.png)no-repeat;
+	background-size:100% 100% ;	
+}
+.chosen-no{
+	color: #000;
+	background:none;
+}
