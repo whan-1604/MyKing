@@ -25,6 +25,10 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	}
 }])
 .controller('heroIntrCtrl',['$scope','$http',function($scope,$http){
+	$http.get('components/home/json/heroList.json').success(function(res){
+		$scope.data=res.data;
+		console.log($scope.data);
+	})
 	/*$http.get('components/guides/json/colleagues.json').success(function(res){
 	$scope.data=res.msg.result;
 	})*/
