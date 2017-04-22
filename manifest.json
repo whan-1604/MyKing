@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "王者荣耀WebApp",/*应用名称，程序桌面图标名称*/
@@ -199,5 +199,106 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"components/videos/games/games.js",
+					"js/libs/angular-css.min.js",
+					"js/libs/swiper-3.4.1.min.js",
+					"js/libs/angular-ui-router.js",
+					"components/guides/guides.js",
+					"components/matches/matches.js",
+					"components/videos/introduce/introduce.js",
+					"img/down.png",
+					"app.js",
+					"css/index.css",
+					"js/libs/angular.js",
+					"components/videos/videos.js",
+					"components/videos/happy/happy.js",
+					"components/videos/hero/hero.js",
+					"css/swiper-3.4.1.min.css",
+					"css/reset.css",
+					"components/videos/official/official.js",
+					"components/home/home.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"components/guides/recent/recent.css",
+				"components/home/json/strategy01.json",
+				"components/guides/colleagues/colleagues.css",
+				"components/matches/matches.png",
+				"components/videos/games/games.html",
+				"components/matches/json/1.json",
+				"components/matches/matches.css",
+				"components/home/bannerImg/hbanner03.jpg",
+				"components/matches/matches.jpg",
+				"components/videos/introduce/introduce.css",
+				"components/videos/games/games.css",
+				"components/heroIntr/heroIntr.html",
+				"components/videos/videos.css",
+				"components/guides/json/officialNews.json",
+				"components/guides/json/recent.json",
+				"components/heroIntr/heroIntr.css",
+				"components/videos/hero/hero.html",
+				"components/videos/json/official.json",
+				"components/guides/recent/recent.html",
+				"components/videos/json/hero.json",
+				"components/guides/officialNews/officialNews.css",
+				"components/videos/happy/happy.css",
+				"components/home/json/view.json",
+				"bitbug_favicon.ico",
+				"components/guides/json/recentpage3.json",
+				"components/videos/happy/happy.html",
+				"components/guides/guides.css",
+				"components/guides/officialNews/officialNews.html",
+				"components/home/json/strategy.json",
+				"components/home/home.css",
+				"components/videos/introduce/introduce.html",
+				"components/home/json/strategy02.json",
+				"components/guides/json/colleagues.json",
+				"components/videos/json/games.json",
+				"components/home/video_icon.png",
+				"components/guides/json/newhand.json",
+				"img/play.png",
+				"components/videos/json/bannner.json",
+				"components/home/index.png",
+				"components/guides/heros/heros.html",
+				"components/guides/json/heros.json",
+				"components/home/home.html",
+				"components/guides/heros/heros.css",
+				"components/guides/json/recentpage2.json",
+				"components/guides/colleagues/colleagues.html",
+				"components/home/bannerImg/hBanner01.jpg",
+				"components/matches/matches.html",
+				"components/home/btn_list.png",
+				"components/guides/json/recentgage4.json",
+				"components/forNew/forNew.css",
+				"components/videos/official/official.css",
+				"img/snavnew11.png",
+				"components/guides/json/bannner.json",
+				"img/seach.png",
+				"img/dic.png",
+				"components/videos/json/introduce.json",
+				"components/videos/hero/hero.css",
+				"components/guides/newhand/newhand.html",
+				"components/guides/newhand/newhand.css",
+				"components/guides/json/recentpage5.json",
+				"components/videos/img/index.png",
+				"components/videos/official/official.html",
+				"components/videos/json/happy.json",
+				"components/home/bannerImg/hbanner02.jpg",
+				"img/logo.png",
+				"components/forNew/forNew.html",
+				"components/matches/json/2.json",
+				"components/videos/videos.html",
+				"components/guides/guides.html"
+			]
+		}
+	}
 }

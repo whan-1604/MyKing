@@ -1,0 +1,24 @@
+{
+	"index.html": {
+		"resources": [
+			"components/videos/games/games.js",
+			"js/libs/angular-css.min.js",
+			"js/libs/swiper-3.4.1.min.js",
+			"js/libs/angular-ui-router.js",
+			"components/guides/guides.js",
+			"components/matches/matches.js",
+			"components/videos/introduce/introduce.js",
+			"img/down.png",
+			"app.js",
+			"css/index.css",
+			"js/libs/angular.js",
+			"components/videos/videos.js",
+			"components/videos/happy/happy.js",
+			"components/videos/hero/hero.js",
+			"css/swiper-3.4.1.min.css",
+			"css/reset.css",
+			"components/videos/official/official.js",
+			"components/home/home.js"
+		]
+	}
+}
