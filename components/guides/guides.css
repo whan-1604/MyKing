@@ -6,11 +6,13 @@
 }
 .g-search input{
 	height: 2rem;
-	width:28.4rem;
+	width:29rem;
 	color: #9fa0a1;
 	line-height: 2rem;
+	text-indent: 3rem;
 	border:none;
-	background: #f1f3f5;
+	background: url(../../img/seach.png)no-repeat 1rem center #f1f3f5;
+	background-size: 1.4rem;
 }
 .g_banner {
 	height: 13.8rem;

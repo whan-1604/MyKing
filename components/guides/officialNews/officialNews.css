@@ -54,3 +54,12 @@
 	display: block;
 	text-align: right;
 }
+.guide-o-dl dd a:nth-of-type(2) span:first-of-type{
+	padding-right:1.4rem;
+	height: 2rem;
+	background: url(../../../img/dic.png)no-repeat right 0.2rem;
+	background-size: 1.2rem;
+}
+.guide-o-dl dd a:nth-of-type(2) span:last-of-type{
+	line-height: 1.8rem;
+}
