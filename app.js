@@ -30,3 +30,5 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	})*/
 	$scope.name='heihieheiheiehiehieehiheie';
 }])
+
+
