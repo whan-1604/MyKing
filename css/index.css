@@ -84,3 +84,9 @@
 	background: url(../img/snavnew11.png)no-repeat  100% #2d3140;
 	background-size: 400% 100%;
 }
+.isSelected{
+	background: #d7b87f;
+}
+.unSelected{
+	background: #2d3140;
+}

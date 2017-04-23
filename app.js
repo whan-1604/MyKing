@@ -14,14 +14,44 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
             controller:'heroIntrCtrl',
             css:'components/heroIntr/heroIntr.css'
         })
+        .state('forNew.guidesForNew',{
+            url: '/guidesForNew',
+            templateUrl: 'components/forNew/guidesForNew/guidesForNew.html',
+            controller:'guidesForNewCtrl',
+            css:['components/forNew/forNew.css','components/forNew/guidesForNew/guidesForNew.css']
+        })
+        .state('forNew.joinTheKing',{
+            url: '/joinTheKing',
+            templateUrl: 'components/forNew/joinTheKing/joinTheKing.html',
+            controller:'joinTheKingCtrl',
+            css:['components/forNew/forNew.css','components/forNew/joinTheKing/joinTheKing.css']
+        })
+        .state('forNew.recForNew',{
+            url: '/recForNew',
+            templateUrl: 'components/forNew/recForNew/recForNew.html',
+            controller:'recForNewCtrl',
+            css:['components/forNew/forNew.css','components/forNew/recForNew/recForNew.css']
+        })
+        
 })
 .controller('forNewCtrl',['$scope','$http',function($scope,$http){
-	/*$http.get('components/guides/json/colleagues.json').success(function(res){
-	$scope.data=res.msg.result;
-	})*/
-	$scope.change=false;
-	$scope.changeClass=function(){
-		$scope.change=!$scope.change;
+	$scope.isTwo=true;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	$scope.changeTwo=function(){
+		$scope.isTwo=true;
+		$scope.isThree=false;
+		$scope.isFour=false;
+	}
+	$scope.changeThree=function(){
+		$scope.isTwo=false;
+		$scope.isThree=true;
+		$scope.isFour=false;
+	}
+	$scope.changeFour=function(){
+		$scope.isTwo=false;
+		$scope.isThree=false;
+		$scope.isFour=true;
 	}
 }])
 .controller('heroIntrCtrl',['$scope','$http',function($scope,$http){
@@ -34,5 +64,36 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	})*/
 	$scope.name='heihieheiheiehiehieehiheie';
 }])
+.controller('myKing',['$scope','$http',function($scope,$http){
+	/*$http.get('components/guides/json/colleagues.json').success(function(res){
+	$scope.data=res.msg.result;
+	})*/
+//	$scope.isTwo=true;
+//	$scope.isThree=false;
+//	$scope.isFour=false;
+//	$scope.changeTwo=function(){
+//		$scope.isTwo=true;
+//		$scope.isThree=false;
+//		$scope.isFour=false;
+//	}
+//	$scope.changeThree=function(){
+//		$scope.isTwo=false;
+//		$scope.isThree=true;
+//		$scope.isFour=false;
+//	}
+//	$scope.changeFour=function(){
+//		$scope.isTwo=false;
+//		$scope.isThree=false;
+//		$scope.isFour=true;
+//	}
+}])
+.controller('joinTheKingCtrl',['$scope','$http',function($scope,$http){
+	
+}])
+.controller('guidesForNewCtrl',['$scope','$http',function($scope,$http){
+	
+}])
+.controller('recForNewCtrl',['$scope','$http',function($scope,$http){
 
+}])
 

@@ -10,11 +10,11 @@
 	</div>
 </div>
 <ul class="v-listTab">
-	<li><a href="" ui-sref='.games'>赛事</a></li>
-	<li><a href="" ui-sref='.hero'>英雄</a></li>
-	<li><a href="" ui-sref='.introduce'>解说</a></li>
-	<li><a href="" ui-sref='.happy'>娱乐</a></li>
-	<li><a href="" ui-sref='.official'>官方</a></li>
+	<li><a href="" ui-sref='.games' ng-class="{true:'beChosen',false:'unBeChosen'}[beOne]" ng-click="changeOne()">赛事<span ng-show="spanShow1"></span></a></li>
+	<li><a href="" ui-sref='.hero' ng-class="{true:'beChosen',false:'unBeChosen'}[beTwo]" ng-click="changeTwo()">英雄<span ng-show="spanShow2"></span></a></li>
+	<li><a href="" ui-sref='.introduce' ng-class="{true:'beChosen',false:'unBeChosen'}[beThree]" ng-click="changeThree()">解说<span ng-show="spanShow3"></span></a></li>
+	<li><a href="" ui-sref='.happy' ng-class="{true:'beChosen',false:'unBeChosen'}[beFour]" ng-click="changeFour()">娱乐<span ng-show="spanShow4"></span></a></li>
+	<li><a href="" ui-sref='.official' ng-class="{true:'beChosen',false:'unBeChosen'}[beFive]" ng-click="changeFive()">官方<span ng-show="spanShow5"></span></a></li>
 </ul>
 <div class="v-listShow" ui-view></div>
 
