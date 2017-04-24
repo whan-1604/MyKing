@@ -62,59 +62,37 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	
 	$scope.change=function(heroST){
 		$scope.style=heroST;
+	}	
+}])
+.controller('myTabCtrl',['$scope','$http',function($scope,$http){
+	$scope.isOne=true;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	$scope.changeOne=function(){
+	$scope.isOne=true;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=false;
 	}
-	
-//	$scope.isShow=false;
-//	$scope.show=function(){
-//		$scope.isShow=!$scope.isShow;
-//	}
-	
-}])
-.controller('myKing',['$scope','$http',function($scope,$http){
-	/*$http.get('components/guides/json/colleagues.json').success(function(res){
-	$scope.data=res.msg.result;
-	})*/
-//	$scope.isTwo=true;
-//	$scope.isThree=false;
-//	$scope.isFour=false;
-//	$scope.changeTwo=function(){
-//		$scope.isTwo=true;
-//		$scope.isThree=false;
-//		$scope.isFour=false;
-//	}
-//	$scope.changeThree=function(){
-//		$scope.isTwo=false;
-//		$scope.isThree=true;
-//		$scope.isFour=false;
-//	}
-//	$scope.changeFour=function(){
-//		$scope.isTwo=false;
-//		$scope.isThree=false;
-//		$scope.isFour=true;
-//	}
-}])
-.controller('myKing',['$scope','$http',function($scope,$http){
-	/*$http.get('components/guides/json/colleagues.json').success(function(res){
-	$scope.data=res.msg.result;
-	})*/
-//	$scope.isTwo=true;
-//	$scope.isThree=false;
-//	$scope.isFour=false;
-//	$scope.changeTwo=function(){
-//		$scope.isTwo=true;
-//		$scope.isThree=false;
-//		$scope.isFour=false;
-//	}
-//	$scope.changeThree=function(){
-//		$scope.isTwo=false;
-//		$scope.isThree=true;
-//		$scope.isFour=false;
-//	}
-//	$scope.changeFour=function(){
-//		$scope.isTwo=false;
-//		$scope.isThree=false;
-//		$scope.isFour=true;
-//	}
+	$scope.changeTwo=function(){
+	$scope.isOne=false;
+	$scope.isTwo=true;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	}
+	$scope.changeThree=function(){
+	$scope.isOne=false;
+	$scope.isTwo=false;
+	$scope.isThree=true;
+	$scope.isFour=false;
+	}
+	$scope.changeFour=function(){
+	$scope.isOne=false;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=true;
+	}
 }])
 .controller('joinTheKingCtrl',['$scope','$http','$location',function($scope,$http,$location){
 		$scope.a=function(id){
