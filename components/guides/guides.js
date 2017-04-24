@@ -53,6 +53,76 @@ angular.module('guidesModule',[])
 	$http.get('components/guides/json/bannner.json').success(function(res){
 		$scope.data=res.msg.reclist_270;
 	})
+	$scope.spanShow1=true;
+		$scope.spanShow2=false;
+		$scope.spanShow3=false;
+		$scope.spanShow4=false;
+		$scope.spanShow5=false;
+		$scope.beOne=true;
+		$scope.beTwo=false;
+		$scope.beThree=false;
+		$scope.beFour=false;
+		$scope.beFive=false;
+		$scope.changeOne=function(){
+		$scope.beOne=true;
+		$scope.beTwo=false;
+		$scope.beThree=false;
+		$scope.beFour=false;
+		$scope.beFive=false;
+		$scope.spanShow1=true;
+		$scope.spanShow2=false;
+		$scope.spanShow3=false;
+		$scope.spanShow4=false;
+		$scope.spanShow5=false;
+		}
+		$scope.changeTwo=function(){
+		$scope.beOne=false;
+		$scope.beTwo=true;
+		$scope.beThree=false;
+		$scope.beFour=false;
+		$scope.beFive=false;
+		$scope.spanShow1=false;
+		$scope.spanShow2=true;
+		$scope.spanShow3=false;
+		$scope.spanShow4=false;
+		$scope.spanShow5=false;
+		}
+		$scope.changeThree=function(){
+		$scope.beOne=false;
+		$scope.beTwo=false;
+		$scope.beThree=true;
+		$scope.beFour=false;
+		$scope.beFive=false;
+		$scope.spanShow1=false;
+		$scope.spanShow2=false;
+		$scope.spanShow3=true;
+		$scope.spanShow4=false;
+		$scope.spanShow5=false;
+		}
+		$scope.changeFour=function(){
+		$scope.beOne=false;
+		$scope.beTwo=false;
+		$scope.beThree=false;
+		$scope.beFour=true;
+		$scope.beFive=false;
+		$scope.spanShow1=false;
+		$scope.spanShow2=false;
+		$scope.spanShow3=false;
+		$scope.spanShow4=true;
+		$scope.spanShow5=false;
+		}
+		$scope.changeFive=function(){
+		$scope.beOne=false;
+		$scope.beTwo=false;
+		$scope.beThree=false;
+		$scope.beFour=false;
+		$scope.beFive=true;
+		$scope.spanShow1=false;
+		$scope.spanShow2=false;
+		$scope.spanShow3=false;
+		$scope.spanShow4=false;
+		$scope.spanShow5=true;
+		}
 }])
 .controller('recentCtrl',['$scope','$http',function($scope,$http){
 	$http.get('components/guides/json/recent.json').success(function(res){

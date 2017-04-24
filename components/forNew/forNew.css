@@ -23,7 +23,8 @@
 	display: block;
 	height: 100%;
 	width:100%;
-	line-height: 300%;
+	font-size: 1.4rem;
+	line-height: 250%;
 	/*background: url(../../img/go_icon_02.png)no-repeat;
 	background-size:100% 100% ;*/
 	text-align: center;
@@ -36,4 +37,9 @@
 .chosen-no{
 	color: #000;
 	background:none;
+}
+.forNew-show{
+	height: 94.8%;
+	background:#f1f1f1;
+	padding:0 0.9rem;
 }

@@ -13,10 +13,10 @@
 	</div>
 </div>
 <ul class="g-listTab">
-	<li><a href="" ui-sref='.recent'>最新</a></li>
-	<li><a href="" ui-sref='.newhand'>新手</a></li>
-	<li><a href="" ui-sref='.heros'>英雄</a></li>
-	<li><a href="" ui-sref='.officialNews'>官方</a></li>
-	<li><a href="" ui-sref='.colleagues'>同人</a></li>
+	<li><a href="" ui-sref='.recent' ng-class="{true:'beChosen',false:'unBeChosen'}[beOne]" ng-click="changeOne()">最新<span ng-show="spanShow1"></span></a></li>
+	<li><a href="" ui-sref='.newhand' ng-class="{true:'beChosen',false:'unBeChosen'}[beTwo]" ng-click="changeTwo()">新手<span ng-show="spanShow2"></span></a></li>
+	<li><a href="" ui-sref='.heros' ng-class="{true:'beChosen',false:'unBeChosen'}[beThree]" ng-click="changeThree()">英雄<span ng-show="spanShow3"></span></a></li>
+	<li><a href="" ui-sref='.officialNews' ng-class="{true:'beChosen',false:'unBeChosen'}[beFour]" ng-click="changeFour()">官方<span ng-show="spanShow4"></span></a></li>
+	<li><a href="" ui-sref='.colleagues' ng-class="{true:'beChosen',false:'unBeChosen'}[beFive]" ng-click="changeFive()">同人<span ng-show="spanShow5"></span></a></li>
 </ul>
 <div class="g-listShow" ui-view></div>

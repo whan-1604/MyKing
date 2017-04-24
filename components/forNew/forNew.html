@@ -1,9 +1,9 @@
 <ul class="forNew-list">
 	<li><a href="" ui-sref='home'></a></li>
-	<li><a href="" ng-class="{true:'chosen-yes',false:'chosen-no'}[change]" ng-click="changeClass()">走进王者荣耀</a></li>
-	<li><a href="">新手指南</a></li>
-	<li><a href="">新手推荐</a></li>
+	<li><a href="" ui-sref='.joinTheKing' ng-class="{true:'chosen-yes',false:'chosen-no'}[isTwo]" ng-click="changeTwo()">走进王者荣耀</a></li>
+	<li><a href="" ui-sref='.guidesForNew' ng-class="{true:'chosen-yes',false:'chosen-no'}[isThree]" ng-click="changeThree()">新手指南</a></li>
+	<li><a href="" ui-sref='.recForNew' ng-class="{true:'chosen-yes',false:'chosen-no'}[isFour]" ng-click="changeFour()">新手推荐</a></li>
 </ul>
-<div id="forNew-show" ui-view>
+<div class="forNew-show" ui-view>
 	
 </div>

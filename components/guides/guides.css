@@ -65,7 +65,23 @@
 	font-size: 1.4rem;
 	line-height: 3rem;
 	text-align: center;
+	position:relative;
 }
-v-listShow{
+.g-listTab li a span{
+	display: inline-block;
+	border:0.6rem solid transparent;
+	border-top:0.6rem solid #c1a26d;
+	position:absolute;
+	bottom:-1.1rem;
+	left:2.8rem;
+	z-index: 9;
+}
+.g-listShow{
 	width: 100%;
+}
+.beChosen{
+	background: #c1a26d;
+}
+.unBeChosen{
+	background: none;
 }
