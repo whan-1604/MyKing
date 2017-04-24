@@ -55,4 +55,9 @@ angular.module('matchesModule',[])
 	$scope.changeShow=function(){
 		$scope.isActive=!$scope.isActive;
 	}
+	
+//	$scope.isShow=false;
+//	$scope.show=function(){
+//		$scope.isShow=!$scope.isShow;
+//	}
 }])

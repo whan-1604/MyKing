@@ -37,5 +37,5 @@ angular.module('homeModule',[])
 	$http.get('components/home/json/strategy02.json').success(function(res){
 		$scope.picLists01=res.msg.result;
 	})
-	
 }])
+

@@ -1,29 +1,30 @@
 <div class="mSpace"></div>
 <ul id="hList">
-	<li>
-		<a href="javascript:void(0)">全部</a>
+	<li ng-click="change('')">
+		<a href="javascript:void(0)" >全部</a>
 	</li>
-	<li>
+	<li ng-click="change('战士')">
 		<a href="javascript:void(0)">战士</a>
 	</li>
-	<li>
+	<li ng-click="change('法师')">
 		<a href="javascript:void(0)">法师</a>
 	</li>
-	<li>
+	<li ng-click="change('坦克')">
 		<a href="javascript:void(0)">坦克</a>
 	</li>
-	<li>
+	<li ng-click="change('刺客')">
 		<a href="javascript:void(0)">刺客</a>
 	</li>
-	<li>
+	<li ng-click="change('射手')">
 		<a href="javascript:void(0)">射手</a>
 	</li>
-	<li>
+	<li ng-click="change('辅助')">
 		<a href="javascript:void(0)">辅助</a>
 	</li>
 </ul>
+
 <ul class="heroList">
-	<li ng-repeat="item in data">
+	<li ng-repeat="item in data | filter:style" >
 		<dt><img src="{{item.imgUrl}}" alt="" /></dt>
 		<dd>{{item.name}}</dd>
 	</li>

@@ -29,10 +29,16 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 		$scope.data=res.data;
 		console.log($scope.data);
 	})
-	/*$http.get('components/guides/json/colleagues.json').success(function(res){
-	$scope.data=res.msg.result;
-	})*/
-	$scope.name='heihieheiheiehiehieehiheie';
+	
+	$scope.change=function(heroST){
+		$scope.style=heroST;
+	}
+	
+//	$scope.isShow=false;
+//	$scope.show=function(){
+//		$scope.isShow=!$scope.isShow;
+//	}
+	
 }])
 
 

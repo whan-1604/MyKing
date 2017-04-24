@@ -3,6 +3,6 @@
 #hList li{width:14.28%;float:left;text-align:center;}
 .heroList{width:91.66%;margin:0 auto;}
 .heroList li{width:19.5%;float:left;margin-left:7%;}
-.heroList li img{width:5.6rem;height:5.6rem;}
+.heroList li img{width:100%;}
 .heroList li dd{text-align:center;}
 .heroList li:nth-of-type(4n+1){margin-left:0;}
