@@ -92,10 +92,12 @@
 .show{display:block;}
 .inshow{display:none;}
 
-.isSelected{
+.one{
 	background: #d7b87f;
+	color: #d7b87f;
 }
-.unSelected{
+.two{
 	background: #2d3140;
+	color:#2d3140;
 }
 

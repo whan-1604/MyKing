@@ -62,6 +62,7 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 	
 	$scope.change=function(heroST){
 		$scope.style=heroST;
+<<<<<<< HEAD
 	}
 
 }])
@@ -94,6 +95,39 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 //		$scope.isThree=false;
 //		$scope.isFour=true;
 //	}
+=======
+	}	
+}])
+.controller('myTabCtrl',['$scope','$http',function($scope,$http){
+	$scope.isOne=true;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	$scope.changeOne=function(){
+	$scope.isOne=true;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	}
+	$scope.changeTwo=function(){
+	$scope.isOne=false;
+	$scope.isTwo=true;
+	$scope.isThree=false;
+	$scope.isFour=false;
+	}
+	$scope.changeThree=function(){
+	$scope.isOne=false;
+	$scope.isTwo=false;
+	$scope.isThree=true;
+	$scope.isFour=false;
+	}
+	$scope.changeFour=function(){
+	$scope.isOne=false;
+	$scope.isTwo=false;
+	$scope.isThree=false;
+	$scope.isFour=true;
+	}
+>>>>>>> aa2852bbcc9e2596d1a3e7fc47db03bce7802b61
 }])
 .controller('joinTheKingCtrl',['$scope','$http','$location',function($scope,$http,$location){
 		$scope.a=function(id){
