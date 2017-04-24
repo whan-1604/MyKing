@@ -116,8 +116,11 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 //		$scope.isFour=true;
 //	}
 }])
-.controller('joinTheKingCtrl',['$scope','$http',function($scope,$http){
-	
+.controller('joinTheKingCtrl',['$scope','$http','$location',function($scope,$http,$location){
+		$scope.a=function(id){
+			$location.hash(id);
+		}
+		
 }])
 .controller('guidesForNewCtrl',['$scope','$http',function($scope,$http){
 	

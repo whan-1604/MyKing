@@ -36,10 +36,19 @@
 .forNew-intr1{
 	height: 34rem;
 	width: 100%;
+	background: #fff;
 }
 .forNew-intr1 .forNew-intr2{
-	height: 14.7%;
+	height: 15%;
 	width: 100%;
+	position:relative;
+	padding:0.1px;
+}
+.forNew-intr1 .forNew-intr2 ul{
+	height: 2.3rem;
+	width:100%;
+	position: absolute;
+	top:3rem;
 }
 .forNew-intr1 .forNew-intr2 ul li{
 	height: 2.3rem;
@@ -47,6 +56,7 @@
 	border-radius: 50%;
 	border:1px solid #d9d9d9;
 	float: left;
+	margin: 0 2rem;
 }
 .forNew-intr1 .forNew-intr2 ul li a{
 	display: block;
@@ -54,8 +64,46 @@
 	width:2rem;
 	border-radius: 50%;
 	background: #2784e0;
+	position: relative;
+}
+.forNew-intr1 .forNew-intr2 ul li a span{
+	position: absolute;
+	height: 2.2rem;
+	width:5.4rem;
+	top:-2.2rem;
+	left: -1.5rem;
+	text-align:center;
+	background: url(../../../img/back.png) no-repeat;
+	background-size:100% 90% ;
 }
 .forNew-intr1 .outer{
-	height: 85.3%;
+	height: 85%;
+	width: 100%;
 	overflow: hidden;
+}
+.forNew-intr2 >p{
+	width: 25rem;
+	height:0.3rem;
+	border:1px solid red;
+	background: #fff;
+	margin: 4rem auto 0;
+}
+.forNew-intr1 .outer div{
+	height: 100%;
+	width:100%;
+	padding:0 1rem;
+	overflow: hidden;
+}
+.forNew-intr1 .outer div h3{
+	height: 4.6rem;
+	line-height: 4.6rem;
+}
+.forNew-intr1 .outer div p{
+	font-size:1.4rem;
+	line-height: 1.6rem;
+}
+.forNew-intr1 .outer div img{
+	display: block;
+	height: 17rem;
+	width: 100%;
 }
