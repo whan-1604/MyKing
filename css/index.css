@@ -85,6 +85,7 @@
 	background-size: 400% 100%;
 }
 
+
 #ad{position:fixed;z-index:9999;top:0;background:rgba(0,0,0,0.8);width:100%;height:100%;}
 #ad .ad{width:100%;width:80%;height:70%;display:block;margin:15% 10%;}
 #ad .add{width:2.2rem;height:2.2rem;position:absolute;display:block;margin-top:15%;margin-left:83%;}
