@@ -33,6 +33,20 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
             css:['components/forNew/forNew.css','components/forNew/recForNew/recForNew.css']
         })
         
+        .state('activities',{
+            url: '/activities',
+            templateUrl: 'components/activities/activities.html',
+            controller:'activitiesCtrl',
+            css:'components/activities/activities.css'
+        })
+        
+         .state('inFormation',{
+            url: '/inFormation',
+            templateUrl: 'components/inFormation/inFormation.html',
+            controller:'inFormationCtrl',
+            css:'components/inFormation/inFormation.css'
+        })
+        
 })
 .controller('forNewCtrl',['$scope','$http',function($scope,$http){
 	$scope.isTwo=true;
@@ -116,3 +130,10 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 
 }])
 
+.controller('activitiesCtrl',['$scope','$http',function($scope,$http){
+		$scope.name='张小萌';
+}])
+
+.controller('inFormationCtrl',['$scope','$http',function($scope,$http){
+		$scope.name='啦啦啦啦';
+}])
