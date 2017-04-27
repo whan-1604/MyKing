@@ -21,24 +21,28 @@
 #hmenu li a p{position:absolute;bottom:0.5rem;width:100%;}
 
 #hInformation{width:90.91%;height:13rem;background:#fff;margin:0 auto;}
+#hInformation h6{height:4rem}
 #hInformation h6 p{height:4rem;line-height: 4rem;float:left;width:86.7%;}
-#hInformation li{width:100%;}
+#hInformation li{width:100%;height:3rem;}
 #hInformation li p{float:left;width:86.7%;height:3rem;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 #hInformation li b{color:#6f6f6f;width:13.3%;height:3rem;float:right;display:block;}
 #hInformation h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
 
 
 #hVideo{width:90.91%;margin:0 auto;}
+#hVideo h6{
+	height:3rem;
+}
 #hVideo h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
 #hVideo h6 p{height:4rem;line-height: 4rem;float:left;width:86.7%;}
-#hVideo li{width:50%;float:left;position:relative;}
-#hVideo li dl{width:100%;margin:0 auto;height:11.6rem;}
+#hVideo li{width:40%;float:left;position:relative;height:11.6rem;}
+#hVideo li dl{width:100%;margin:0 auto;height: 100%;}
 #hVideo li dt{width:100%;height:8rem;}
-#hVideo li dt img{height:8rem;}
+#hVideo li dt img{height:100%;width:100%;display: block;}
 
 .hStart{position:absolute;bottom:6rem;left:30%;}
 
-#hVideo li dl dd{text-overflow: ellipsis;overflow: hidden;white-space:nowrap;font-size:1.4rem;}
+#hVideo li dl dd p{text-overflow: ellipsis;overflow: hidden;white-space:nowrap;font-size:1.4rem;}
 
 #hStrategy{width:90.91%;margin:0 auto;}
 #hStrategy h6 span{width:13.3%;height:3rem;float:right;display:block;line-height: 4rem;}
@@ -54,7 +58,58 @@
 #hStrategy li dl .hContent div{color:#a7acb0;font-size:1.2rem;line-height:1.4rem;text-overflow: ellipsis;white-space: pre-wrap;}
 #hStrategy li dl .hTime span{display:block;margin-bottom:2rem;}
 #hStrategy li dl .hTime b{display:block;font-weight: normal;}
+.clear{
+	clear: both;
+}
+.home-g-videos{
+	height: 11.6rem;
+	width: 44%;
+	float: left;
+	margin-top:1.2rem ;
+}
+.home-g-videos:nth-child(odd){
+	margin:1.2rem 0.7rem 0 1.7rem;
+}
 
+.home-g-videos a {
+	display: block;
+	width:100%;
+	height:10.2rem;
+	position: relative;
+	
+}
+.home-g-videos a img{
+	width:100%;
+	height: 78.43%;
+	border-radius: 6px;
+}
+.home-g-videos a >span:nth-of-type(1){
+	position: absolute;
+	top:3.8rem;
+	left:6.5rem;
+	height: 2.4rem;
+	width: 2.4rem;
+	border-radius: 50%;
+	background: url(video_icon.png)no-repeat center;
+	background-size: 2.8rem 2.8rem;
+}
+.home-g-videos a >span:nth-of-type(2){
+	display: block;
+	font-size: 1.4rem;
+	height: 2.6rem;
+	padding-top:0.8rem ;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.home-g-videos a p span:nth-child(2){
+	float: right;
+}
+.home-g-videos a p span:nth-child(1){
+	padding-left: 1.4rem;
+	background:url(../../../img/play.png)no-repeat left center;
+	background-size: 1rem 0.8rem;
+}
 
 
 
