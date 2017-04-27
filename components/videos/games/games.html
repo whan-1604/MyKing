@@ -1,6 +1,6 @@
 <div class="v-g-videos" ng-repeat='item in gamesData'>
 	<a href="{{item.sUrl}}">
-		<img src="{{item.sIMG}}"/>
+		<img lazy-src="{{item.sIMG}}"/>
 		<span></span><span>{{item.sTitle}}</span>
 		<p><span>{{item.iTotalPlay}}</span><span>{{item.sIdxTime}}</span></p>
 	</a>

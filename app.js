@@ -1,4 +1,4 @@
-angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','guidesModule','matchesModule'])
+angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','guidesModule','matchesModule','me-lazyload'])
 .config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/home');
     $stateProvider
@@ -74,6 +74,7 @@ angular.module('myKing',["ui.router",'angularCSS','homeModule','videosModule','g
 }])
 
 .controller('myTabCtrl',['$scope','$http',function($scope,$http){
+	console.log(22222222222);
 	$scope.isOne=true;
 	$scope.isTwo=false;
 	$scope.isThree=false;

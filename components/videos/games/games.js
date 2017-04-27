@@ -1,4 +1,4 @@
-angular.module('gamesModule',[])
+angular.module('gamesModule',['me-lazyload'])
 .config(function($stateProvider, $urlRouterProvider){
     $stateProvider
         .state('videos.games',{
